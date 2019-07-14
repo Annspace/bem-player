@@ -10,70 +10,76 @@
 
 </head>
 <body>
-<div class='layout'>
-    <div class='layout__top'>
-        <div class='layout__sidebar'>
-            <div class='sidebar'>
+<div class="layout">
+    <div class="layout__top">
+        <div class="layout__sidebar">
+            <div class="sidebar">
                 <div class="dots">
                     <span class="dots__item"></span><span class="dots__item"></span><span class="dots__item"></span>
                 </div>
-                <div class='menu-controls'>
-                    <div class="menu-controls__item">
-                        <a href="#" class='menu-controls__wrapper menu-controls__wrapper_circle'>
-                            <i class="menu-controls__icon menu-controls__icon_browse"></i>
-                        </a>
-                        <span class='menu-controls__disc'>browse</span>
-                    </div>
-                    <div class="menu-controls__item">
-                        <a href="#" class='menu-controls__wrapper menu-controls__wrapper_circle'>
+                <div class="menu-controls">
+                    <a href="#" class="menu-controls__item">
+                            <div class="menu-controls__wrapper menu-controls__wrapper_circle">
+                                <i class="menu-controls__icon menu-controls__icon_browse"></i>
+                            </div>
+                            <span class="menu-controls__disc">browse</span>
+                    </a>
+                    <a href="#" class="menu-controls__item">
+                        <div class="menu-controls__wrapper menu-controls__wrapper_circle">
                             <i class="menu-controls__icon menu-controls__icon_radio"></i>
-                        </a>
-                        <span class='menu-controls__disc'>radio</span>
-                    </div>
-                    <div class="menu-controls__item">
-                        <a href="#" class='menu-controls__wrapper menu-controls__wrapper_circle'>
+                        </div>
+                        <span class="menu-controls__disc">radio</span>
+                    </a>
+                    <a href="#" class="menu-controls__item">
+                        <div class="menu-controls__wrapper menu-controls__wrapper_circle">
                             <i class="menu-controls__icon menu-controls__icon_heart"></i>
-                        </a>
-                        <span class='menu-controls__disc'>liked</span>
-                    </div>
+                        </div>
+                        <span class="menu-controls__disc">liked</span>
+                    </a>
                 </div>
-                <button class="favorite-button">Made for you</button>
+                <button class="menu-control menu-control_button">Made for you</button>
                 <div class="menu">
-                    <div class='menu__header'>
+                    <div class="menu__header">
                         <span>Your library</span>
                         <a href="#">
                             <i class="arrow-up-icon"></i>
                         </a>
                     </div>
-                    <ul class='menu__list'>
-                        <li class='menu__item'><a href="#" class="menu__link">Recently Played</a></li>
-                        <li class='menu__item'><a href="#" class="menu__link">Podcasts</a></li>
-                        <li class='menu__item'><a href="#" class="menu__link">Local Files</a></li>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Recently Played</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Podcasts</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Local Files</a></li>
                     </ul>
                 </div>
                 <div class="menu">
-                    <div class='menu__header'>
+                    <div class="menu__header">
                         <span>Playlists</span>
                         <a href="#">
                             <i class="arrow-up-icon"></i>
                         </a>
                     </div>
-                    <ul class='menu__list'>
-                        <li class='menu__item'><a href="#" class="menu__link">Work it, Own it!</a></li>
-                        <li class='menu__item'><a href="#" class="menu__link">Run beb</a></li>
-                        <li class='menu__item'><a href="#" class="menu__link">90’s Popular</a></li>
-                        <li class='menu__item'><a href="#" class="menu__link">Coffee House</a></li>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Work it, Own it!</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Run beb</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">90’s Popular</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Coffee House</a></li>
                     </ul>
+                </div>
+                <div class="menu-control-wrapper">
+                    <input type="text" class="menu-control menu-control_input" placeholder="New Playlist">
+                    <a href="#" class="plus-link">
+                        <i class="plus-link__icon"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class='layout__main'>
+        <div class="layout__main">
             <div class="main-content">
 
             </div>
         </div>
     </div>
-    <div class='layout__footer'>
+    <div class="layout__footer">
         <div class="player">
             <div class="player-artist"></div>
             <div class="player-controls">
