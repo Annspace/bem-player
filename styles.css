@@ -47,7 +47,7 @@ ul {
     overflow: auto;
 }
 
-.menu {
+.menu_margin_bottom {
     margin-bottom: 33px;
 }
 
@@ -58,15 +58,15 @@ ul {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1.68px;
-    margin-bottom: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 17px;
 }
 
 .menu__list {
     color: #a9a9a9;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 
@@ -83,7 +83,7 @@ ul {
     color: #dcdcdc;
 }
 
-.dots {
+.dots_margin_bottom {
     margin-bottom: 50px;
 }
 
@@ -94,7 +94,7 @@ ul {
     height: 13px;
     background-color: #3b4c64;
     margin-right: 10px;
-    border-radius: 999px;
+    border-radius: 50%;
 }
 
 .player {
@@ -134,14 +134,14 @@ ul {
 }
 
 .player-controls__back {
-    background-image: url('./images/backward.png');
+    background-image: url("./images/backward.png");
 }
 
-.menu-controls__disc {
+.menu-controls__desc {
     display: inline-block;
     text-decoration: none;
     color: #d4d4d4;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.09px;
@@ -151,29 +151,29 @@ ul {
 .menu-controls {
     display: flex;
     justify-content: space-between;
+}
+
+.menu-controls_margin_bottom {
     margin-bottom: 34px;
 }
 
-.menu-controls__wrapper {
+.menu-controls__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
 }
 
-.menu-controls__wrapper:hover .menu-controls__disc {
+.menu-controls__item:hover .menu-controls__desc {
     color: #f9f9f9;
 }
 
-.menu-controls__item {
+.menu-controls__item-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu-controls__item_circle {
     border: 1px solid #d4d4d4;
-    border-radius: 25px;
+    border-radius: 50%;
     width: 49px;
     height: 49px;
 }
@@ -182,38 +182,48 @@ ul {
     width: 17px;
     height: 17px;
     background-repeat: no-repeat;
+    display: inline-block;
 }
 
-.icon_type-browse {
-    background-image: url('./images/browse.png');
+.icon_type_browse {
+    background-image: url("./images/browse.png");
 }
 
-.icon_type-radio {
-    background-image: url('./images/radio.png');
+.icon_size_radio {
     width: 21px;
     height: 15px;
     background-size: cover;
 }
 
-.icon_type-heart {
-    background-image: url('./images/heart.png');
+.icon_type_radio {
+    background-image: url("./images/radio.png");
+}
+
+.icon_size_heart {
     width: 15px;
     height: 15px;
 }
 
+.icon_type_heart {
+    background-image: url("./images/heart.png");
+}
+
 .menu-button {
-    width: 247px;
+    width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
     border-radius: 23px;
     color: #212020;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.07px;
-    margin-bottom: 25px;
     background-image: linear-gradient(270deg, #1ed761 0%, #1e64d7 100%);
     border: none;
+}
+
+.menu-button_margin_bottom {
+    margin-bottom: 25px;
 }
 
 .menu-button:focus {
@@ -221,13 +231,11 @@ ul {
 }
 
 .add-form__input {
-    width: 247px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    width: 100%;
     border-radius: 23px;
     background-image: linear-gradient(to top, #010b1e 0%, #020b1c 100%);
     border: 1px solid #3b4c64;
-    padding-left: 21px;
+    padding: 11px 40px 11px 25px;
     color: #597193;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -245,12 +253,13 @@ ul {
     position: relative;
 }
 
-.icon_type-plus {
-    background-image: url("images/plus.png");
-    background-repeat: no-repeat;
-    display: inline-block;
+.icon_size_plus {
     width: 15px;
     height: 14px;
+}
+
+.icon_type_plus {
+    background-image: url("images/plus.png");
 }
 
 .add-form__link {
@@ -263,13 +272,14 @@ ul {
     color: #dcdcdc;
 }
 
-.icon_type-arrow-up {
-    background-image: url('./images/arrow_up.png');
+.icon_size_arrow-up {
     width: 11px;
     height: 7px;
-    background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block;
+}
+
+.icon_type_arrow-up {
+    background-image: url("./images/arrow_up.png");
 }
 
 .shuffle-icon {
