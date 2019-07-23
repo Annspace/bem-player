@@ -19,19 +19,19 @@
                 </div>
                 <div class="menu-controls menu-controls_margin_bottom">
                     <a href="#" class="menu-controls__item">
-                            <div class="menu-controls__item-icon-wrapper">
+                            <div class="menu-controls__item-icon-wrapper menu-controls__item-icon-wrapper_size_sidebar">
                                 <i class="icon icon_type_browse"></i>
                             </div>
                             <span class="menu-controls__desc">browse</span>
                     </a>
                     <a href="#" class="menu-controls__item">
-                        <div class="menu-controls__item-icon-wrapper">
+                        <div class="menu-controls__item-icon-wrapper menu-controls__item-icon-wrapper_size_sidebar">
                             <i class="icon icon_type_radio icon_size_radio"></i>
                         </div>
                         <span class="menu-controls__desc">radio</span>
                     </a>
                     <a href="#" class="menu-controls__item">
-                        <div class="menu-controls__item-icon-wrapper">
+                        <div class="menu-controls__item-icon-wrapper menu-controls__item-icon-wrapper_size_sidebar">
                             <i class="icon icon_type_heart icon_size_heart"></i>
                         </div>
                         <span class="menu-controls__desc">liked</span>
@@ -75,13 +75,166 @@
         </div>
         <div class="layout__main">
             <div class="main-content">
+                <div class="main-content__playlist-image">
+                </div>
+                <div class="main-content-header">
+                    <div class="main-content-header__nav">
+                        <div class="double-arrows">
+                            <a href="#">
+                                <i class="icon icon_type_arrow-left icon_size_arrow-left"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon icon_type_arrow-right icon_size_arrow-right icon_margin_left"></i>
+                            </a>
+                        </div>
+                        <div class="search-form">
+                            <input class="search-form__input" placeholder="Search" type="text">
+                            <a href="#" class="search-form__link">
+                                <i class="icon icon_type_search"></i>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <i class="icon icon_type_queue"></i>
+                        </a>
+                    </div>
+                    <div class="main-content-header__desc">
+                        <span class="main-content-header__desc-type">Playlist</span>
+                        <br>
+                        <span class="main-content-header__desc-playlist">Drive loud</span>
+                        <br>
+                        <span class="main-content-header__desc-playlist-info">Forget the traffic stress.</span>
+                        <span class="main-content-header__desc-playlist-add-info">Created by <b>Spotify</b> 50 songs, 2 hr 46 mins</span>
+                    </div>
+                </div>
+                    <div class="main-content__controls">
+                        <div>
+                            <button class="play-button">Play</button>
+                            <button class="follow-button follow-button_margin_left">Follow</button>
+                                <a href="#" class="main-content__controls-item">
+                                    <div class="main-content__controls-item-icon-wrapper">
+                                        <i class="icon icon_type_telegram icon_size_telegram"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="main-content__controls-item">
+                                    <div class="main-content__controls-item-icon-wrapper">
+                                        <i class="icon icon_type_dots icon_size_dots"></i>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="followers-info">
+                            <span>Followers</span>
+                            <br>
+                            <span>67,543</span>
+                        </div>
+                    </div>
+                    <div class=" table-control-wrapper flex-wrapper flex-wrapper_paddings_24 flex-wrapper_margin_top-24">
+                        <a href="#" class="table-control">
+                            <i class="icon icon_type_search-light"></i>
+                            <span>Filter</span>
+                        </a>
+                        <a href="#" class="table-control">
+                            <span>Download</span>
+                            <i class="icon icon_type_download"></i>
+                        </a>
+                    </div>
+                    <table class="songs-table songs-table_margin_top">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th class="songs-table__header">title</th>
+                            <th class="songs-table__header">artist</th>
+                            <th class="songs-table__header">
+                                <i class="icon icon_type_calendar icon_size_calendar"></i>
+                            </th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td class="songs-table__item songs-table__item_width_30">
+                                <button class="songs-table__play-button"></button>
+                            </td>
+                            <td class="songs-table__item">I Don't Like Mondays</td>
+                            <td class="songs-table__item">The Boomtown Rats</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                            <td class="songs-table__item">
+                                <a href="#" class="songs-table__item-link">
+                                    <i class="icon icon_type_dots icon_size_dots"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td></td>
+                            <td class="songs-table__item">Good For You</td>
+                            <td class="songs-table__item">Selena Gomez</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td></td>
+                            <td class="songs-table__item">Same Old Love</td>
+                            <td class="songs-table__item">Selena Gomez</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td></td>
+                            <td class="songs-table__item">Muddy Waters</td>
+                            <td class="songs-table__item">LP</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td></td>
+                            <td class="songs-table__item">Birileri</td>
+                            <td class="songs-table__item">Nada</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td class="songs-table__item songs-table__item_align_center">
+                                <button class="songs-table__add-button"></button>
+                            </td>
+                            <td></td>
+                            <td class="songs-table__item">Love came here</td>
+                            <td class="songs-table__item">Lhasa De Sela</td>
+                            <td class="songs-table__item songs-table__item_color_light">4 days ago</td>
+                        </tr>
+                    </table>
 
+            </div>
+        </div>
+        <div class="layout__sidebar">
+            <div class="sidebar">
             </div>
         </div>
     </div>
     <div class="layout__footer">
         <div class="player">
-            <div class="player-artist"></div>
+            <div class="playing-line">
+                <div class="playing-line__active" style="width: 24%"></div>
+                <div class="playing-line__inactive"></div>
+            </div>
+            <div class="playing-song">
+                <a href="#">
+                    <i class="icon icon_type_plus-main icon_size_plus-main icon_align_middle"></i>
+                </a>
+                <img class="playing-song__image">
+                <div class="playing-song__info">
+                    <a href="#" class="playing-song__owner">Develerle Yaşıyorum</a>
+                    <br>
+                    <a href="#" class="playing-song__title">Gaye Su Akyol</a>
+                </div>
+            </div>
             <div class="player-controls">
                 <i class="shuffle-icon"></i>
                 <i class="backward-icon"></i>
@@ -89,7 +242,11 @@
                 <i class="forward-icon"></i>
                 <i class="repeat-icon"></i>
             </div>
-            <div class="player-sound"></div>
+            <div>
+                <button class="devices-button devices-button_margin_right_21"></button>
+                <button class="volume-button volume-button_margin_right_9"></button>
+                <div class="volume-line"></div>
+            </div>
         </div>
     </div>
 </div>
