@@ -112,7 +112,6 @@ a {
 }
 
 .playing-song__image {
-    background-image: url("./images/artist.png");
     width: 54px;
     height: 54px;
     margin-left: 15px;
@@ -123,6 +122,7 @@ a {
 .playing-song__info {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 19px;
 }
 
 .playing-song__owner {
@@ -153,7 +153,7 @@ a {
     background-color: #020916;
 }
 
-.main-content__playlist-image {
+.main-content-header__image {
     position: absolute;
     width: 225px;
     height: 225px;
@@ -437,6 +437,10 @@ a {
     vertical-align: middle;
 }
 
+.icon_align_baseline {
+    vertical-align: baseline;
+}
+
 .add-form__link {
     position: absolute;
     right: 18px;
@@ -674,6 +678,8 @@ a {
 .songs-table__play-button:focus {
     outline: none;
     background-image: url("./images/pause.png");
+    width: 35px;
+    height: 35px;
     background-size: 8px 9px;
 }
 
@@ -747,7 +753,6 @@ a {
 }
 
 .playing-line__active {
-    flex: 1;
     width: 0;
     height: 4px;
     border-radius: 2px;
@@ -769,37 +774,218 @@ a {
     bottom: -5px;
 }
 
-.shuffle-icon {
-    background-image: url("images/shuffle.png");
+.player-controls__shuffle-button {
     width: 15px;
     height: 11px;
+    background-image: url("./images/shuffle.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #020a19;
+    border: none;
 }
 
-.pause-icon {
-   background-image: url("./images/pause.png");
-   width: 17px;
-   height: 17px;
-   background-repeat: no-repeat;
+.player-controls__shuffle-button:focus, .player-controls__backward-button:focus,
+.player-controls__pause-button:focus, .player-controls__forward-button:focus,
+.player-controls__repeat-button:focus
+{
+    outline: none;
 }
 
-.backward-icon {
-    background-image: url("./images/backward.png");
+.player-controls__backward-button {
     width: 10px;
     height: 10px;
+    background-image: url("./images/backward.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #020a19;
+    border: none;
 }
 
-.forward-icon {
+.player-controls__pause-button {
+    background-image: url("./images/pause.png");
+    width: 39px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #020a19;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+}
+
+.player-controls__forward-button {
     background-image: url("./images/forward.png");
     width: 10px;
     height: 10px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #020a19;
+    border: none;
 }
 
-.repeat-icon {
+.player-controls__repeat-button {
     background-image: url("images/repeat.png");
     width: 15px;
     height: 11px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #020a19;
+    border: none;
+}
+
+.user-info {
+    line-height: 35px;
+}
+
+.user-info_margin_bottom_27 {
+    margin-bottom: 27px;
+}
+
+.user-info__avatar {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.user-info__name {
+    color: #afafaf;
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-left: 15px;
+}
+
+.user-info__name:hover {
+    color: #ffffff;
+}
+
+.user-info__message {
+    border-radius: 50%;
+    background-color: #246b85;
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: inline-block;
+    color: #040404;
+    font-family: "Avenir Heavy", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+    margin-right: 13px;
+}
+
+
+.user-info__controls {
+    display: inline-block;
+    float: right;
+}
+
+.icon_rotate_90 {
+    transform: rotate(90deg);
+}
+
+.user-friend_margin_bottom-34 {
+    margin-bottom: 34px;
+}
+
+.user-friends-title {
+    color: #3b4c64;
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.user-friend__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-friend__avatar {
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.user-friend__name {
+    color: #c3c8d5;
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.user-friend__time {
+    color: #3b4c64;
+    font-family: "Open Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+}
+
+.user-friend__favorite-song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-friend__favorite-song-img {
+    width: 41px;
+    height: 41px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.user-friend__favorite-song-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-friend__favorite-song-title {
+    color: #c3c8d5;
+    font-family: "Raleway Semi Bold", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-friend__favorite-song-desc-title {
+    color: #c3c8d5;
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.19px;
+    margin-left: 8px;
+}
+
+.icon_type_friend-desc {
+    background-image: url("./images/friend_desc.png");
+    width: 14px;
+    height: 14px;
+}
+
+.icon_type_note {
+    background-image: url("./images/note.png");
+    width: 14px;
+    height: 14px;
+}
+
+.user-friend__favorite-song-owner {
+    color: #c3c8d5;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
 }

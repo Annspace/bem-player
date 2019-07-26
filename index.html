@@ -75,8 +75,6 @@
         </div>
         <div class="layout__main">
             <div class="main-content">
-                <div class="main-content__playlist-image">
-                </div>
                 <div class="main-content-header">
                     <div class="main-content-header__nav">
                         <div class="double-arrows">
@@ -97,6 +95,7 @@
                             <i class="icon icon_type_queue"></i>
                         </a>
                     </div>
+                    <div class="main-content-header__image"></div>
                     <div class="main-content-header__desc">
                         <span class="main-content-header__desc-type">Playlist</span>
                         <br>
@@ -215,6 +214,125 @@
         </div>
         <div class="layout__sidebar">
             <div class="sidebar">
+                <div class="user-info user-info_margin_bottom_27">
+                    <img src="./images/user.png" class="user-info__avatar">
+                    <a href="#">
+                        <span class="user-info__name">Eray Yavuz</span>
+                    </a>
+                    <div class="user-info__controls">
+                        <a href="#">
+                            <span class="user-info__message">1</span>
+                        </a>
+                        <a href="#">
+                            <i class="icon icon_type_arrow-right icon_rotate_90 icon_align_middle"></i>
+                        </a>
+                    </div>
+                </div>
+                <h1 class="user-friends-title">friend activity</h1>
+                <div class="user-friend user-friend_margin_bottom-34">
+                    <div class="user-friend__info">
+                        <div>
+                            <img src="./images/friend_avatar.png" class="user-friend__avatar">
+                            <span class="user-friend__name">Polen Merida</span>
+                        </div>
+                        <span class="user-friend__time">3H</span>
+                    </div>
+                    <div class="user-friend__favorite-song">
+                        <div>
+                            <img src="./images/friend-song.png" class="user-friend__favorite-song-img">
+                            <div class="user-friend__favorite-song-info">
+                                <a href="#" class="user-friend__favorite-song-title">A Paris</a>
+                                <br>
+                                <a href="#" class="user-friend__favorite-song-owner">Riff Cohen</a>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="icon icon_type_heart"></i>
+                        </a>
+                    </div>
+                    <div class="user-friend__favorite-song-desc">
+                        <i class="icon icon_type_friend-desc icon_align_middle"></i>
+                        <span class="user-friend__favorite-song-desc-title">Sunday Mood’z</span>
+                    </div>
+                </div>
+                <div class="user-friend user-friend_margin_bottom-34">
+                    <div class="user-friend__info">
+                        <div>
+                            <img src="./images/friend_avatar_1.png" class="user-friend__avatar">
+                            <span class="user-friend__name">Rosie Clever</span>
+                        </div>
+                        <span class="user-friend__time">3H</span>
+                    </div>
+                    <div class="user-friend__favorite-song">
+                        <div>
+                            <img src="./images/album1.png" class="user-friend__favorite-song-img">
+                            <div class="user-friend__favorite-song-info">
+                                <a href="#" class="user-friend__favorite-song-title">American Daydream</a>
+                                <br>
+                                <a href="#" class="user-friend__favorite-song-owner">Electric Guest</a>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="icon icon_type_heart"></i>
+                        </a>
+                    </div>
+                    <div class="user-friend__favorite-song-desc">
+                        <i class="icon icon_type_note icon_align_middle"></i>
+                        <span class="user-friend__favorite-song-desc-title">Discover Weekly</span>
+                    </div>
+                </div>
+                <div class="user-friend user-friend_margin_bottom-34">
+                    <div class="user-friend__info">
+                        <div>
+                            <img src="./images/friend_avatar_2.png" class="user-friend__avatar">
+                            <span class="user-friend__name">Koray Seçgin</span>
+                        </div>
+                        <span class="user-friend__time">3H</span>
+                    </div>
+                    <div class="user-friend__favorite-song">
+                        <div>
+                            <img src="./images/album_3.png" class="user-friend__favorite-song-img">
+                            <div class="user-friend__favorite-song-info">
+                                <a href="#" class="user-friend__favorite-song-title">Tutamıyorum Zamanı</a>
+                                <br>
+                                <a href="#" class="user-friend__favorite-song-owner">Müslüm Gürses</a>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="icon icon_type_heart"></i>
+                        </a>
+                    </div>
+                    <div class="user-friend__favorite-song-desc">
+                        <i class="icon icon_type_friend-desc icon_align_middle"></i>
+                        <span class="user-friend__favorite-song-desc-title">Sunday Mood’z</span>
+                    </div>
+                </div>
+                <div class="user-friend user-friend_margin_bottom-34">
+                    <div class="user-friend__info">
+                        <div>
+                            <img src="./images/friend_avatar_3.png" class="user-friend__avatar">
+                            <span class="user-friend__name">Didem Sorian</span>
+                        </div>
+                        <span class="user-friend__time">3H</span>
+                    </div>
+                    <div class="user-friend__favorite-song">
+                        <div>
+                            <img src="images/album_4.png" class="user-friend__favorite-song-img">
+                            <div class="user-friend__favorite-song-info">
+                                <a href="#" class="user-friend__favorite-song-title">A Paris</a>
+                                <br>
+                                <a href="#" class="user-friend__favorite-song-owner">Riff Cohen</a>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="icon icon_type_heart"></i>
+                        </a>
+                    </div>
+                    <div class="user-friend__favorite-song-desc">
+                        <i class="icon icon_type_friend-desc icon_align_middle"></i>
+                        <span class="user-friend__favorite-song-desc-title">Sunday Mood’z</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -222,25 +340,27 @@
         <div class="player">
             <div class="playing-line">
                 <div class="playing-line__active" style="width: 24%"></div>
-                <div class="playing-line__inactive"></div>
             </div>
             <div class="playing-song">
                 <a href="#">
                     <i class="icon icon_type_plus-main icon_size_plus-main icon_align_middle"></i>
                 </a>
-                <img class="playing-song__image">
+                <img src="images/artist.png" class="playing-song__image">
                 <div class="playing-song__info">
                     <a href="#" class="playing-song__owner">Develerle Yaşıyorum</a>
                     <br>
                     <a href="#" class="playing-song__title">Gaye Su Akyol</a>
                 </div>
+                <a href="#">
+                    <i class="icon icon_type_heart icon_align_baseline"></i>
+                </a>
             </div>
             <div class="player-controls">
-                <i class="shuffle-icon"></i>
-                <i class="backward-icon"></i>
-                <i class="pause-icon"></i>
-                <i class="forward-icon"></i>
-                <i class="repeat-icon"></i>
+                <button class="player-controls__shuffle-button"></button>
+                <button class="player-controls__backward-button"></button>
+                <button class="player-controls__pause-button"></button>
+                <button class="player-controls__forward-button"></button>
+                <button class="player-controls__repeat-button"></button>
             </div>
             <div>
                 <button class="devices-button devices-button_margin_right_21"></button>
